@@ -1,0 +1,5 @@
+Day 14 - MERN Stack (02/11/2025)
+
+Introduction to Tailwind (Utility Class)
+Example in Tailwind Play Ground
+Project Demo using Tailwind
