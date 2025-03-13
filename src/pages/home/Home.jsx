@@ -2,14 +2,18 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/NavBar'
 import Card from '../components/Card'
 import axios from 'axios'
+
 const Home = () => {
 const[books, setBooks] = useState([])
-const fetchBooks =() =>{
+const fetchBooks =async() =>{
 
-  axios.get('http://localhost:3000/book')
+  const response = await axios.get('http://localhost:3000/book')
+console.log(response)
+
+
 }
 useEffect(()=>{
-
+fetchBooks()
 },[])
 
   return (
