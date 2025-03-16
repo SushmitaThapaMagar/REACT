@@ -22,7 +22,7 @@ console.log(book)
   return (
     <>
     <NavBar />
-    <div class="max-w-sm bg-white border border-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mb-20">
+    <div class="m-19 p-1 max-w-sm bg-white border border-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mb-300">
     <a href="#">
     <img class="rounded-t-lg" src={book.imageUrl ? book.imageUrl : "https://fr.web.img3.acsta.net/pictures/21/08/04/17/39/2012034.jpg"} alt="" />
     </a>
