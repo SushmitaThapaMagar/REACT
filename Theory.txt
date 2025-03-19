@@ -19,3 +19,33 @@ All Books, Single Book API Integration
 
 Day 18 - MERN Stack (02/17/2025)
 Add Book API Integration 
+
+
+Day 19 - MERN Stack (02/19/2025)
+
+Delete and Edit Book API Integration 
+Use of Fake Filler Extension
+
+
+TODAY'S LEARNING
+useParams(): Used to retrieve parameters from the URL. 
+useNavigate(): this allows the component to programmatically navigate to different routes.
+useState(): Used to initialize state variables in functional components.
+handleChange: Updates the data state whenever a form input changes.
+handleSubmit: An asynchronous function that handles the form submission.
+e.preventDefault(): Prevents the default form submission behavior.
+FormData(): Creates a new FormData object to send data to the server.
+axios.patch(): Sends a PATCH request to update the book details on the server. 
+
+
+Understanding of Environment:
+a. Local : environment is where developers work on their applications directly on their personal computers
+b. Production :  environment is where the final, tested application is deployed for end-users
+c. Staging : pre-production environment that mimics the production setup
+
+OPTIONAL LEARNING :
+- Hosting (ngrok)
+
+
+
+

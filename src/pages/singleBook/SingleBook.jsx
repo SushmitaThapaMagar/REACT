@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
 
 const SingleBook = () => {
@@ -36,6 +36,13 @@ console.log(book)
         <p class="text-black-700 text-base">Published Date : {book.publishAt} </p>
         <p class="text-black-700 text-base">Publication : {book.publication} </p>
 
+<button className='bg-pink-600 p-1 px-3'>
+Delete
+</button>
+<Link to={`/editBook/${book._id}`} >
+<button className='bg-pink-600 p-1 px-3 ml-4'>
+Edit
+</button></Link>
 
     </div>
 </div>
