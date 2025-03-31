@@ -1,4 +1,4 @@
-Day 14 - MERN Stack (02/11/2025)
+Day 14 - MERN Stack (03/11/2025)
 
 Introduction to Tailwind (Utility className)
 Example in Tailwind Play Ground
@@ -7,21 +7,21 @@ Project Demo using Tailwind
 
 
 
-Day 16 - MERN Stack (02/15/2025)
+Day 16 - MERN Stack (03/15/2025)
 
 Fontend and Backend 
 Single Book API Integration 
 
 
 
-Day 17 - MERN Stack (02/16/2025)
+Day 17 - MERN Stack (03/16/2025)
 All Books, Single Book API Integration 
 
 Day 18 - MERN Stack (02/17/2025)
 Add Book API Integration 
 
 
-Day 19 - MERN Stack (02/19/2025)
+Day 19 - MERN Stack (03/19/2025)
 
 Delete and Edit Book API Integration 
 Use of Fake Filler Extension
@@ -37,6 +37,10 @@ e.preventDefault(): Prevents the default form submission behavior.
 FormData(): Creates a new FormData object to send data to the server.
 axios.patch(): Sends a PATCH request to update the book details on the server. 
 
+/editBook/:id
+Purpose: includes a parameter :id, which allows to capture a value
+/editBook/
+Purpose: does not include any parameters
 
 Understanding of Environment:
 a. Local : environment is where developers work on their applications directly on their personal computers
@@ -49,3 +53,14 @@ OPTIONAL LEARNING :
 
 
 
+Day 20 - MERN Stack (03/19/2025)
+
+
+
+TODAY'S LEARNING
+Theory
+Domain : unique address of a website on the internet
+Hosting : provides the physical space (server) where your website's files, media, and data are stored and ensures your site is accessible online
+VPS - Provides a virtualized environment with dedicated resources and CPanel - Used to manage hosting accounts
+
+Vercel - Registration and Login 
