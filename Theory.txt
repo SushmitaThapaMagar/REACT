@@ -61,6 +61,8 @@ Domain : unique address of a website on the internet
 Hosting : provides the physical space (server) where your website's files, media, and data are stored and ensures your site is accessible online
 VPS - Provides a virtualized environment with dedicated resources and CPanel - Used to manage hosting accounts
 Frontend in Vercel 
-BackEnd in Render 
+Backand in Render 
 Database in Atlas
+
+Variable Export and Import
 

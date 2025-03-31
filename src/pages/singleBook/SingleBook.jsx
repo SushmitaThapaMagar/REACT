@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios'
+import { backendUrl } from '../config'
 
 const SingleBook = () => {
 const {id} = useParams()
@@ -9,7 +10,7 @@ const [book, setBook]=useState({})
 console.log(id)
 
 const fetchBook = async()=>{
-  const response = await axios.get(`https://mernstack1-3wbl.onrender.com/book/${id}`)
+  const response = await axios.get(`${backendUrl}/book/${id}`)
   if(response.status===200){
     setBook(response.data.data)
   }

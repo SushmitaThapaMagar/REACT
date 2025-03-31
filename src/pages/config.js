@@ -1,0 +1,1 @@
+export const backendUrl = 'https://mernstack1-3wbl.onrender.com/'

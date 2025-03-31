@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/NavBar'
 import Card from '../components/Card'
 import axios from 'axios'
+import { backendUrl } from '../config'
 
 const Home = () => {
 const[books, setBooks] = useState([])
 const fetchBooks =async() =>{
 
-  const response = await axios.get('https://mernstack1-3wbl.onrender.com/book')
+  const response = await axios.get(`${backendUrl}/book`)
  if(response.status===200){
   setBooks(response.data.data)
  }
