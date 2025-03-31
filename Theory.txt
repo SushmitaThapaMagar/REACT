@@ -55,13 +55,12 @@ OPTIONAL LEARNING :
 
 Day 20 - MERN Stack (03/19/2025)
 
-
-
 TODAY'S LEARNING
 Theory
 Domain : unique address of a website on the internet
 Hosting : provides the physical space (server) where your website's files, media, and data are stored and ensures your site is accessible online
 VPS - Provides a virtualized environment with dedicated resources and CPanel - Used to manage hosting accounts
+Frontend in Vercel 
+BackEnd in Render 
+Database in Atlas
 
-Vercel - Registration and Login 
-Render - Registration and Login 
