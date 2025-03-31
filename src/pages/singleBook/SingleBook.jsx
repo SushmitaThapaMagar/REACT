@@ -9,7 +9,7 @@ const [book, setBook]=useState({})
 console.log(id)
 
 const fetchBook = async()=>{
-  const response = await axios.get(`http://localhost:3000/book/${id}`)
+  const response = await axios.get(`https://mernstack1-3wbl.onrender.com/book/${id}`)
   if(response.status===200){
     setBook(response.data.data)
   }
