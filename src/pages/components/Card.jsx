@@ -6,7 +6,7 @@ const Card = ({book}) => {
     console.log(book)
   return (
     
-<div class="m-2 max-w-sm bg-white border border-gray-100 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mb-10">
+<div class="m-2 max-w-sm bg-white border border-gray-100 rounded-lg shadow-sm dark:bg-white dark:border-white mb-10">
     <a href="#">
         <img class="rounded-t-lg" src={book.imageUrl ? book.imageUrl : "https://fr.web.img3.acsta.net/pictures/21/08/04/17/39/2012034.jpg"} alt="" />
     </a>

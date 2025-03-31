@@ -64,3 +64,4 @@ Hosting : provides the physical space (server) where your website's files, media
 VPS - Provides a virtualized environment with dedicated resources and CPanel - Used to manage hosting accounts
 
 Vercel - Registration and Login 
+Render - Registration and Login 
