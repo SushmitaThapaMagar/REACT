@@ -66,3 +66,217 @@ Database in Atlas
 
 Variable Export and Import
 
+
+
+
+Day 21 - MERN Stack (03/21/2025)
+
+TypeScript-History
+Note: TypeScript only in development not production
+Enum : Represent a group of related values that won't change
+
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+Union :  Allows you to combine two sets into one
+type ID = number | string | boolean
+let userId: ID = 123
+let userId2:ID = "Sushmita"
+
+Intersection :  Refers to the operation of finding common elements between two sets
+type Employee = {
+    name:string;
+    role: string
+}
+
+type Skill = {
+    language : string
+}
+
+type Developer = Employee & Skill
+
+let developer:Developer = {
+    name:"Sushmita Thapa Magar",
+    role: "Full Stack Developer",
+    language:"Nepali"
+}
+
+
+Day 22 - MERN Stack (03/22/2025)
+
+Generics in TypeScript :  act as type variables or placeholders for types that are specified when the code is used
+
+function identity<T>(param:T):T{
+    return param
+}
+let result = identity<string>('10')
+console.log(result)
+interface Data<T,U>{
+    first : T, 
+    second : U
+}
+let data: Data <number, string> ={
+    first : 1,
+    second : "Sushmita"
+}
+let data1: Data <string, number>  ={
+    first : "Sushmita",
+    second : 1
+}
+function combine<T extends string | number> (a:T, b:T):string{
+    return  `${a}${b}`
+}
+let result1=combine('Sushmita','Thapa Magar')
+console.log(result1)
+
+Introduction to OOP(Object oriented programming): approach to do code (functional approach)
+Difference between TypeScript and JavaScript
+
+
+Day 23 - MERN Stack (03/23/2025)
+
+TODAY'S LEARNING
+
+OOP features overview
+Inheritence : allows a child class to inherit properties and behaviors (methods) from a parent class.
+class Shape{
+    color : string
+
+    constructor(color:string){
+        this.color = color
+    }
+    displayColor():void{
+        console.log(`Color : ${this.color}`)
+    }
+}
+class circle extends Shape{
+    radius : number
+
+    constructor(radius:number, color:string){
+        super(color)
+        this.radius = radius
+    }
+    calculateRadius():number{
+        return Math.PI * this.radius ** 2
+    }
+}
+class rectangle extends Shape{
+    width: number
+    height : number
+    constructor(width:number, height:number, color:string){
+        super(color)
+        this.width = width
+        this.height =height
+    }
+    calculateArea():number{
+        return this.width*this.height
+    }
+}
+const redCircle = new circle(3, 'Pink')
+redCircle.displayColor()
+console.log(redCircle.calculateRadius())
+const redRectangle = new rectangle(3,23, 'Red')
+console.log(redRectangle.calculateArea())
+
+Polymorphism : allows objects of different types to be treated as objects of a common superclass.
+class Cat{
+    makeSound():void{
+        console.log("Meow")
+    }
+}
+class Dog{
+    makeSound():void{
+        console.log("bark")
+    }
+}
+function soundAnimal(pet:any):void{
+    pet.makeSound()
+}
+const myCat = new Cat()
+const myDog = new Dog()
+soundAnimal(myCat)
+soundAnimal(myDog)
+
+Encapsulation : bundles data (attributes) and methods into a single unit (object) and data hiding
+class Person{
+    private _name: string
+    address : string
+
+    constructor(name:string, address:string){
+        this._name=name
+        this.address=address
+    }
+    getName():string{
+        return this._name
+    }
+    setName(newName:string):void{
+        this._name = newName
+    }
+}
+const newPerson=new Person('Sushmita', 'Chapagoun')
+console.log(newPerson._name)
+console.log(newPerson.setName("hello"))
+console.log(newPerson.getName())
+console.log(newPerson.address)
+
+Abstraction : 	hides unnecessary implementation details
+class Human{
+    private _type:string
+    constructor(type:string){
+        this._type=type
+    }
+    private _Abnormal():number{
+        console.log("HemoGoblins")
+        return 0;
+    }
+    displayInfo():void{
+        const normal = this._Abnormal()
+        console.log(`Normal rate:${normal}`)
+    }
+}
+const person =  new Human("Normal being")
+person.displayInfo()
+
+
+
+
+
+
+Day 24 - MERN Stack (03/24/2025)
+
+TODAY'S LEARNING
+
+Theory
+HTTP polling : Involves the client repeatedly sending requests to the server to check for Updates
+Short Polling : The client sends HTTP requests at fixed intervals (e.g., every 5 seconds)
+Long Polling : The client sends a request, and the server holds it open until new data is available or a timeout occurs
+Bandwidth : Refers to the maximum capacity of a network connection to transfer data in a given amount of time
+Web Sockets : Just a standard, not implementation (a full duplex communication, bi-directional, event based communication)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
