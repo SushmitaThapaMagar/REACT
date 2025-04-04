@@ -255,7 +255,74 @@ HTTP polling : Involves the client repeatedly sending requests to the server to 
 Short Polling : The client sends HTTP requests at fixed intervals (e.g., every 5 seconds)
 Long Polling : The client sends a request, and the server holds it open until new data is available or a timeout occurs
 Bandwidth : Refers to the maximum capacity of a network connection to transfer data in a given amount of time
-Web Sockets : Just a standard, not implementation (a full duplex communication, bi-directional, event based communication)
+Web Sockets : Just a standard, not implementation (a full duplex communication, bi-directional, low latency, event based communication)
+socket.io : automatic reconnection, heart-beat mechanism
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
